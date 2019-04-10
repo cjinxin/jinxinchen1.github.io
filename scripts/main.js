@@ -15,14 +15,14 @@ var button = document.querySelector('button');
 function setUserName() {
 	var name = prompt('Please enter your name.');
 	localStorage.setItem('name', name);
-	alert('Welcome! ' + name);
+	alert('Welcome! ' + name + '!');
 }
 
 if (!localStorage.getItem('name')) {
 	setUserName();
 } else {
 	var storedName = localStorage.getItem('name');
-	alert('Welcome! ' + storedName);
+	alert('Welcome! ' + storedName + '!');
 }
 
 button.onclick = function() {
